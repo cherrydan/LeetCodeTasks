@@ -9,6 +9,7 @@ public class TestIntToRoman {
             "3, III",
             "58, LVIII",
             "1994, MCMXCIV",
+            "27, XXVII",
             "971, CMLXX"
 
     })
