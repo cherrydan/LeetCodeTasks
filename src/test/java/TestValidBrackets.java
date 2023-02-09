@@ -18,6 +18,11 @@ public class TestValidBrackets {
 
     @Test
     public void testValidBrackets2() {
-        Assertions.assertTrue(ValidBracketsSolution.isValid("(({}[()])"));
+        Assertions.assertTrue(ValidBracketsSolution.isValid("(({}[()]))"));
+    }
+
+    @Test
+    public void testValidBrackets3() {
+        Assertions.assertTrue(ValidBracketsSolution.isValid( "()[]{}"));
     }
 }
