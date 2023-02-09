@@ -10,7 +10,7 @@ public class TestIntToRoman {
             "58, LVIII",
             "1994, MCMXCIV",
             "27, XXVII",
-            "971, CMLXX"
+            "971, CMLXXI"
 
     })
     public void testIntToRoman(int num, String expected) {
