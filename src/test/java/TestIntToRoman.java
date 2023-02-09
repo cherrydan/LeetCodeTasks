@@ -9,6 +9,6 @@ public class TestIntToRoman {
 
     @Test
     public void testIntToRoman2() {
-        Assertions.assertEquals(IntegerToRoman.intToRoman(1994), "DCLXXI");
+        Assertions.assertEquals(IntegerToRoman.intToRoman(1994), "MCMXCIV");
     }
 }
