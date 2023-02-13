@@ -2,20 +2,13 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class TestRomanToInt {
-
+    private final String[] romans = {"DCLXXI", "MCMXCIV", "MCMLXXVIII" };
+    private final int[] numbers = { 671, 1994, 1978 };
     @Test
     public void testRomanToInt1() {
-        Assertions.assertEquals(RomanToInteger.romanToInt("DCLXXI"), 671);
-    }
-
-    @Test
-    public void testRomanToInt2() {
-        Assertions.assertEquals(RomanToInteger.romanToInt("MCMXCIV"), 1994);
-    }
-
-    @Test
-    public void testRomanToInt3() {
-        Assertions.assertEquals(RomanToInteger.romanToInt("MCMLXXVIII"), 1978);
+        for (int i = 0; i < romans.length; i++) {
+            Assertions.assertEquals(RomanToInteger.romanToInt(romans[i]), numbers[i]);
+        }
     }
 
 }
