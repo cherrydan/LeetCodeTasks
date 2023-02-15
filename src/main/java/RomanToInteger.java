@@ -1,6 +1,6 @@
 import java.util.HashMap;
 import java.util.Map;
-
+//Варик с хэш-мапой
 public class RomanToInteger {
     // А это решение будет с мапой, посмотрим что выдаст по скорости
     static Map<String, Integer> values = new HashMap<>() {{
