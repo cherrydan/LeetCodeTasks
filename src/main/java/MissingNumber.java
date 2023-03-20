@@ -4,6 +4,7 @@ import java.util.Set;
 
 public class MissingNumber {
 
+    // перебором
     public static int missingNumber(int[] nums) {
 
         Arrays.sort(nums);
@@ -25,6 +26,8 @@ public class MissingNumber {
 
     }
 
+    // через HashSet
+
     public static int missingNumberWithHash(int[] nums) {
         Set<Integer> numSet = new HashSet<>();
         for(int num: nums) numSet.add(num);
@@ -36,5 +39,21 @@ public class MissingNumber {
         }
 
         return -1;
+    }
+
+    // сдвиг бит
+    public static int missingNumberWithShift(int[] nums) {
+        int missing = nums.length;
+        for(int i = 0; i < nums.length; i++) {
+            missing ^= i ^ nums[i];
+        }
+        return missing;
+    }
+    // по формуле Гаусса
+    public static int missingNumberGauss(int[] nums) {
+        int exptectedSum = nums.length * (nums.length + 1) / 2;
+        int actualSum = 0;
+        for(int num: nums) actualSum += num;
+        return exptectedSum - actualSum;
     }
 }
