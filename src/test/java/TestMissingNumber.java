@@ -17,6 +17,6 @@ public class TestMissingNumber {
     @Test
     public void test3() {
         int[] nums = {9,6,4,2,3,5,7,0,1};
-        Assertions.assertEquals(MissingNumber.missingNumberGauss(nums), -1);
+        Assertions.assertEquals(MissingNumber.missingNumberGauss(nums), 8);
     }
 }
