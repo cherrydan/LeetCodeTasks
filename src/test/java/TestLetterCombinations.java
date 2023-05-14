@@ -8,7 +8,7 @@ public class TestLetterCombinations {
 
     @Test
     public void test_two_digits() {
-       List<String> actualArray = Arrays.asList("ac","ae","af","bd","be","bf","cd","ce","cf");
+       List<String> actualArray = Arrays.asList("ad","ae","af","bd","be","bf","cd","ce","cf");
 
         Assertions.assertEquals(LetterCombinations.letterCombinations("23"), actualArray);
     }
